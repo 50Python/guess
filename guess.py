@@ -8,12 +8,11 @@ while True:
 	check = int(check)
 	times = times + 1 #可以寫成 times += 1 
 	print('到目前已經猜了', times  , '次')
+	print('提示:' , password) #測試用
 	if check < password:
 		print('猜得比答案小')
-		print('提示:' , password) #測試用
 	elif check > password:
 		print('猜得比答案大')	
-		print('提示:' , password) #測試用
 	elif check == password:
 		print('答對了')
 		break
