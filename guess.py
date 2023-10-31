@@ -1,6 +1,11 @@
 import random
 
-password = random.randint(1, 100)
+start = input('請輸入起始值: ')
+end = input('請輸入結束值: ')
+start = int(start)
+end = int(end)
+
+password = random.randint(start, end)
 times = 0
 
 while True:
